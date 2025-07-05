@@ -1,0 +1,30 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detector</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f8f8f8; }
+        h2 { color: #333; }
+        textarea { width: 100%; padding: 10px; font-size: 16px; }
+        input[type="submit"] { padding: 10px 20px; font-size: 16px; margin-top: 10px; }
+        .result { margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h2>📰 Fake News Detector</h2>
+    <form method="post">
+        <textarea name="news" rows="10" placeholder="Paste news article text here...">{{ user_input }}</textarea><br>
+        <input type="submit" value="Check News">
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <p><strong>Result:</strong> {{ prediction }}</p>
+        {% if confidence %}
+        <p><strong>{{ confidence }}</strong></p>
+        {% endif %}
+    </div>
+    {% endif %}
+</body>
+</html>
