@@ -16,3 +16,19 @@ This is a machine learning web app built with Flask that detects whether a news 
 4. Go to `http://127.0.0.1:5000`
 
 ## 📂 Folder Structure
+
+```
+fake-news-detector/
+├── app.py                  # Flask web app
+├── train_model.py          # ML training script
+├── model/
+│   ├── fake_news_model.pkl # Trained classifier
+│   └── vectorizer.pkl      # TF-IDF vectorizer
+├── dataset/
+│   ├── Fake.csv            # Fake news data
+│   └── True.csv            # Real news data
+├── templates/
+│   └── index.html          # Frontend UI template
+├── requirements.txt        # Dependencies
+├── README.md               # Project documentation
+```
