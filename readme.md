@@ -8,7 +8,7 @@ This is a machine learning web app built with Flask that detects whether a news 
 - Scikit-learn
 - TF-IDF
 - HTML/CSS (Jinja templates)
-![Fake News Detector Screenshot](screenshot.png)
+![Fake News Detector Screenshot](Screenshot.png)
 
 ## 🚀 How to Run
 1. Clone this repo
